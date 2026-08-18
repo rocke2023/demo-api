@@ -2,7 +2,7 @@ import os  # pr hello change v2
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 VERSION = os.environ.get("APP_VERSION", "dev")
-PORT = int(os.environ.get("PORT", "8080"))
+PORT = int(os.environ.get("PORT", "8080"))  # pr demo tweak
 
 class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
